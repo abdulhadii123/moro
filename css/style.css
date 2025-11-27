@@ -485,7 +485,7 @@ color: #232434 !important;
     visibility: visible;
 }
 .menu_dropdown ul li ul.sub-menu li a {
-	color: #fff !important;
+	/* color: #fff !important; */
 	font-size: 15px;
 	padding:8px  15px;
 	text-transform: capitalize;
