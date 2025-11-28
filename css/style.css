@@ -402,6 +402,7 @@ color: #232434 !important;
 	
 }
 @media only screen and (max-width:767px) { 
+	
   .navbar-brand {
     padding-top: 20px;
   }
@@ -499,6 +500,32 @@ color: #232434 !important;
 	padding-left:15px;
 	background:none;
 }
+
+/* ======================= */
+/* DESKTOP - prevent dropdown for no-dropdown items */
+.menu_dropdown ul li > a.no-dropdown + ul.sub-menu {
+    display: none !important; /* hide empty submenu */
+}
+
+/* ======================= */
+/* MOBILE - SlickNav menu */
+@media only screen and (max-width: 767px) {
+
+    /* Hide arrow for no-dropdown items */
+    .slicknav_nav .slicknav_item a.no-dropdown + .slicknav_arrow,
+    .slicknav_nav .slicknav_item .no-dropdown + .slicknav_arrow {
+        display: none !important;
+    }
+
+    /* Make no-dropdown items clickable directly without toggling */
+    .slicknav_nav .no-dropdown {
+        pointer-events: auto;
+        cursor: pointer;
+    }
+
+}
+
+
 /*END DROPDOWN MENU*/
 /*
 * ----------------------------------------------------------------------------------------
