@@ -368,7 +368,7 @@ z-index: 1;
 visibility: visible;
 background: #fff none repeat scroll 0 0;
 box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.05);
-padding: 15px;
+padding: 5px;
 left: 0;
 background: #fff;
 list-style: none;
@@ -402,7 +402,6 @@ color: #232434 !important;
 	
 }
 @media only screen and (max-width:767px) { 
-	
   .navbar-brand {
     padding-top: 20px;
   }
@@ -458,7 +457,7 @@ color: #232434 !important;
     width: 250px;
 	text-align: left;
     z-index: -99;
-	margin-top:15px;
+	margin-top:6px;
 	border-radius: 3px;
 	box-shadow:0 0 45px rgba(0, 0, 0, .08);
 	font-family: 'Poppins', sans-serif;
@@ -488,7 +487,7 @@ color: #232434 !important;
 .menu_dropdown ul li ul.sub-menu li a {
 	/* color: #fff !important; */
 	font-size: 15px;
-	padding:8px  15px;
+	padding:0px;
 	text-transform: capitalize;
 	display: block;
 	border-bottom: 0px;
@@ -500,32 +499,6 @@ color: #232434 !important;
 	padding-left:15px;
 	background:none;
 }
-
-/* ======================= */
-/* DESKTOP - prevent dropdown for no-dropdown items */
-.menu_dropdown ul li > a.no-dropdown + ul.sub-menu {
-    display: none !important; /* hide empty submenu */
-}
-
-/* ======================= */
-/* MOBILE - SlickNav menu */
-@media only screen and (max-width: 767px) {
-
-    /* Hide arrow for no-dropdown items */
-    .slicknav_nav .slicknav_item a.no-dropdown + .slicknav_arrow,
-    .slicknav_nav .slicknav_item .no-dropdown + .slicknav_arrow {
-        display: none !important;
-    }
-
-    /* Make no-dropdown items clickable directly without toggling */
-    .slicknav_nav .no-dropdown {
-        pointer-events: auto;
-        cursor: pointer;
-    }
-
-}
-
-
 /*END DROPDOWN MENU*/
 /*
 * ----------------------------------------------------------------------------------------
